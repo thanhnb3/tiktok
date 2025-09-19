@@ -10,6 +10,7 @@ import Tippy from "@tippyjs/react/headless";
 // components
 import Popper from "../../components/Popper/Popper.jsx";
 import AccountItem from "../../components/AccountItem/AccountItem.jsx";
+import Button from "../../components/Button/Button.jsx";
 // images
 import avatar1 from "../../assets/image/avatar/avatar_1.jpg";
 import avatar2 from "../../assets/image/avatar/avatar_2.png";
@@ -90,7 +91,10 @@ function Header() {
           </div>
         </Tippy>
         {/* actions */}
-        <div className="header__inner__actions"></div>
+        <div className="header__inner__actions">
+          <Button text>Upload</Button>
+          <Button primary>Log In</Button>
+        </div>
       </div>
     </header>
   );

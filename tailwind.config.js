@@ -12,12 +12,22 @@ export default {
         hsearch: "46px",
       },
       colors: {
-        colorsearch: "rgba(22, 24, 35, 0.06)",
-        hoverbuttonsearch: "rgba(22,24,35,0.03)",
-        activebuttonsearch: "rgba(22,24,35,0.06)",
-        colorbuttonsearch: "rgba(22,24,35,0.34)",
-        clearbuttonsearch: "rgba(22,24,35,0.34)",
-        hoveraccountitem: "rgba(22,24,35,0.03)",
+        search: {
+          bg: "rgba(22, 24, 35, 0.06)",
+          hover: "rgba(22,24,35,0.03)",
+          active: "rgba(22,24,35,0.06)",
+          button: "rgba(22,24,35,0.34)",
+          clear: "rgba(22,24,35,0.34)",
+        },
+        button: {
+          hover: "rgba(254,44,85, 0.06)",
+        },
+        account: {
+          hover: "rgba(22,24,35,0.3)",
+        },
+        border: {
+          rounded: "rgba(22,24,35,0.12)",
+        },
       },
     },
   },

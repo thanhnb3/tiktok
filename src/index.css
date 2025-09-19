@@ -9,9 +9,6 @@ body {
   font-size: 1.6rem;
   line-height: 1.5;
 }
-html {
-  font-size: 62.5%;
-}
 
 /* CSS config */
 /* BASE */
@@ -34,7 +31,7 @@ html {
     @apply w-wsearch;
   }
   .account__item__wrapper {
-    @apply flex items-center gap-3 mb-2 py-2 px-4 cursor-pointer hover:bg-hoveraccountitem;
+    @apply flex items-center gap-3 mb-2 py-2 px-4 cursor-pointer hover:bg-account-hover;
   }
   .account__item_avatar {
     @apply size-20 rounded-full object-cover;
@@ -56,23 +53,24 @@ html {
   }
   /* Search Box */
   .header__inner__search {
-    @apply relative flex items-center w-wsearch h-hsearch border border-solid border-transparent bg-colorsearch pl-4 rounded-4xl after:content-[""] after:absolute after:top-[9px] after:right-23 after:h-[28px] after:w-[1px] after:bg-[rgba(22,24,35,0.12)]  focus-within:border-[rgba(22,24,35,0.2)];
+    @apply relative flex items-center w-wsearch h-hsearch border border-solid border-transparent bg-search-bg pl-4 rounded-4xl after:content-[""] after:absolute after:top-[9px] after:right-23 after:h-[28px] after:w-[1px] after:bg-[rgba(22,24,35,0.12)]  focus-within:border-[rgba(22,24,35,0.2)];
   }
   .header__inner__search-input {
     @apply flex-1 h-full text-[16px] text-black caret-red-600 border-none outline-none bg-transparent;
   }
   .header__inner__search-clear {
-    @apply absolute right-[72px] top-1/2 -translate-y-1/2 text-clearbuttonsearch;
+    @apply absolute right-[72px] top-1/2 -translate-y-1/2 text-search-clear;
   }
   .header__inner__search-loading {
-    @apply absolute right-[72px] top-1/2 -translate-y-1/2 text-clearbuttonsearch;
+    @apply absolute right-[72px] top-1/2 -translate-y-1/2 text-search-clear;
   }
   .header__inner__search-btn {
-    @apply h-full w-23 text-3xl text-colorbuttonsearch border-none outline-none rounded-tr-4xl rounded-br-4xl cursor-pointer hover:bg-hoverbuttonsearch active:bg-activebuttonsearch;
+    @apply h-full w-23 text-3xl text-search-button border-none outline-none rounded-tr-4xl rounded-br-4xl cursor-pointer hover:bg-search-hover active:bg-search-active;
   }
 
   /* Action */
   .header__inner__actions {
+    @apply flex items-center gap-2;
   }
   /*****************
   DEFAULT LAYOUT  
