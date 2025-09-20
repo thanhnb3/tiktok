@@ -5,6 +5,7 @@ import {
   faCircleXmark,
   faSpinner,
   faMagnifyingGlass,
+  faEllipsisVertical,
 } from "@fortawesome/free-solid-svg-icons";
 import Tippy from "@tippyjs/react/headless";
 // components
@@ -16,6 +17,7 @@ import avatar1 from "../../assets/image/avatar/avatar_1.jpg";
 import avatar2 from "../../assets/image/avatar/avatar_2.png";
 import avatar3 from "../../assets/image/avatar/avatar_3.jpg";
 import avatar4 from "../../assets/image/avatar/avatar_4.jpg";
+import MenuRight from "../../components/Menu/MenuRight.jsx";
 function Header() {
   const [searchResult, setSearchResult] = useState([]);
 
@@ -94,6 +96,11 @@ function Header() {
         <div className="header__inner__actions">
           <Button text>Upload</Button>
           <Button primary>Log In</Button>
+          <MenuRight>
+            <button className="bg-transparent p-2">
+              <FontAwesomeIcon icon={faEllipsisVertical} />
+            </button>
+          </MenuRight>
         </div>
       </div>
     </header>
