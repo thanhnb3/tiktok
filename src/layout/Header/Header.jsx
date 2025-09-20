@@ -6,6 +6,9 @@ import {
   faSpinner,
   faMagnifyingGlass,
   faEllipsisVertical,
+  faEarthAsia,
+  faCircleQuestion,
+  faKeyboard,
 } from "@fortawesome/free-solid-svg-icons";
 import Tippy from "@tippyjs/react/headless";
 // components
@@ -24,6 +27,22 @@ function Header() {
   const handleChange = (e) => {
     setSearchResult(e.target.value);
   };
+
+  const MENU_ITEMS = [
+    {
+      icon: <FontAwesomeIcon icon={faEarthAsia} />,
+      title: "English",
+    },
+    {
+      icon: <FontAwesomeIcon icon={faCircleQuestion} />,
+      title: "Feedback and help",
+      to: "/feedback",
+    },
+    {
+      icon: <FontAwesomeIcon icon={faKeyboard} />,
+      title: "Shortcuts",
+    },
+  ];
 
   return (
     <header className="header__wrapper">
@@ -96,7 +115,7 @@ function Header() {
         <div className="header__inner__actions">
           <Button text>Upload</Button>
           <Button primary>Log In</Button>
-          <MenuRight>
+          <MenuRight items={MENU_ITEMS}>
             <button className="bg-transparent p-2">
               <FontAwesomeIcon icon={faEllipsisVertical} />
             </button>
